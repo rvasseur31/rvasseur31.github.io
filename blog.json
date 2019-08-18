@@ -19,5 +19,12 @@
   "sub_title": "",
   "top_image": "https://image.flaticon.com/icons/svg/1986/1986751.svg",
   "visible": true
+ },
+ {
+  "url_title": "UberEats",
+  "title": "UberEats",
+  "sub_title": "",
+  "top_image": "https://storage.googleapis.com/ubereats/UE-FB-Post.png",
+  "visible": true
  }
 ]
