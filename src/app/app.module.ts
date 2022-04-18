@@ -1,20 +1,42 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { NgCircleProgressModule } from 'ng-circle-progress';
+import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
-import { LoaderComponent } from './loader/loader.component';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoaderComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    TranslocoRootModule,
+    FormsModule,
+    NgCircleProgressModule.forRoot({
+      toFixed: 0,
+      radius: 80,
+      maxPercent: 100,
+      outerStrokeColor: '#0bceaf',
+      unitsFontWeight: '600',
+      unitsColor: '#ffffff',
+      titleColor: '#ffffff',
+      titleFontWeight: '600',
+      subtitleColor: '#ffffff',
+      subtitleFontWeight: '600',
+      showBackground: false,
+      showInnerStroke: false,
+      animation: false,
+    }),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

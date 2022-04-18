@@ -1,0 +1,38 @@
+{
+  "description": "A Full Stack Developer with 2 years of experience in Laravel, Flutter, Javascript, Java, etc. Student at Ynov Campus Toulouse.",
+
+  "home": "Home",
+  "skills": "Skills",
+  "xps": "Experiences",
+  "portfolio": "Portfolio",
+  "blog": "Blog",
+  "contact": "Contact",
+  "my_name_is": "Hello my name is",
+  "location": "Toulouse, France",
+  "download_cv": "Download my CV",
+  "services": "My services",
+  "dev_web": "Web Development",
+  "dev_web_summary": "Interfaces de gestion de données, APIs, services en ligne ou sites grand public, les applications web sont au cœur de notre quotidien. Si leur utilisation est triviale, leur conception l’est beaucoup moins. Je vous accompagnerai dès la conception du projet, juqu\"au déploiement de cette dernière.",
+  "dev_mobile": "Mobile Development",
+  "dev_mobile_summary": "Passioné par le monde android depuis mon plus jeune âge, j\"ai acquis une grande expérience au cours de ma scolarité. Je vous accompagnerai dès le choix des technologies jusqu\"au déploiement sur les stores.",
+  "hard_skills": "Technical Skills",
+  "soft_skills": "Professional Skills",
+  "cursuses": "Education",
+  "xps_pro": "Professional experiences",
+  "xp_title": "Titre du poste :",
+  "contact_me": "Contact me",
+  "firstName": "First name",
+  "lastName": "Last name",
+  "email": "Email address",
+  "message": "Your message",
+  "send_message": "Send",
+  "featured_posts": "Featured Posts",
+  "by": "By",
+  "post_on": "Post on",
+  "read_more": "Read more",
+  "message_sent": "Your message has been sent successfully.",
+  "about": {
+    "title": "About me",
+    "description": "Hello, my name is Raphaël Vasseur, i am actually studying at Ynov Campus Toulouse"
+  }
+}
