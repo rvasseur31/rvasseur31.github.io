@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng deploy --base-href=https://github.com/rvasseur31/rvasseur31.github.io.git"
+    "deploy": "ng deploy --base-href=/ --repo=https://github.com/rvasseur31/rvasseur31.github.io.git"
   },
   "private": true,
   "dependencies": {
