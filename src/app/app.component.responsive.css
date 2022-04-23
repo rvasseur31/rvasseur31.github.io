@@ -363,35 +363,6 @@
   }
 }
 
-/*------------- 
-[Table of contents]
-
-[ DEFULT INDEX NUMBER ]
-
-1.  GENERAL CSS
-2.  NAVBAR
-4.  HOME
-5.  SERVICE
-6.  ABOUT
-7.  TESTIMONIAL
-8.  FAQ
-9.  QUATE
-10. SUBSCRIBE
-12. BLOG
-13. FOOTER
-14. COPYRIGHT
-
-
-/*
-================
- VARIABLES
-================
-*/
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 .shadow-1 {
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
     0 2px 10px 0 rgba(0, 0, 0, 0.12);

@@ -1,0 +1,140 @@
+.mh-home .mh-header-info {
+  padding-top: 100px;
+}
+
+.mh-home .mh-header-info .mh-promo {
+  margin-bottom: 30px;
+}
+
+.mh-home .mh-header-info .mh-promo span {
+  background-color: #0bceaf;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+}
+
+.mh-home .mh-header-info h2 {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 65px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mh-home .mh-header-info h4 {
+  font-size: 26px;
+  line-height: 34px;
+  margin-bottom: 30px;
+}
+
+.mh-home .mh-header-info ul {
+  margin-top: 20px;
+}
+
+.mh-home .mh-header-info ul li {
+  margin: 10px 0;
+}
+
+.mh-home .mh-header-info ul li .fas,
+.mh-home .mh-header-info ul li .fab {
+  margin-right: 15px;
+  display: inline-block;
+}
+
+.mh-home .mh-header-info ul li address {
+  display: inline-block;
+}
+
+.mh-home .mh-header-info ul li:hover .fas,
+.mh-home .mh-header-info ul li:hover .fab {
+  color: #0bceaf;
+}
+
+.mh-home .mh-header-info .social-icon {
+  margin-top: 0;
+}
+
+.mh-home .mh-header-info .social-icon li :is(.fas:hover, .fab:hover) {
+  background-color: #fff;
+    font-size: 18px;
+  line-height: 30px;
+  padding: 4px 14px;
+  margin-right: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 3px;
+}
+
+.mh-home .mh-header-info .social-icon li a {
+  font-size: 25px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 0;
+  border-radius: 50%;
+}
+
+.mh-home .hero-img {
+  margin: 0 auto;
+  float: none;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.mh-home .hero-img img {
+  margin: 0 auto;
+  float: none;
+  text-align: center;
+  border: 20px solid rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+}
+
+.mh-home .img-border {
+  height: 400px;
+  width: 400px;
+  border: 20px solid rgba(0, 0, 0, 0.9);
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 991px) {
+  .mh-home .mh-header-info {
+    padding: 0;
+  }
+  .mh-home .mh-header-info h2 {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 54px;
+  }
+  .mh-home .mh-header-info h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .mh-home .mh-header-info .mh-promo {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .mh-home .hero-img {
+    margin-bottom: 30px;
+  }
+  .mh-home .mh-header-info {
+    padding: 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .mh-home .img-border {
+    height: 280px;
+    width: 280px;
+  }
+}

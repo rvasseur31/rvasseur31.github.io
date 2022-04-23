@@ -18,8 +18,6 @@ export class AppComponent {
 
   title = 'rvasseur';
 
-  isNavBarMenuOpened = false;
-
   skills = [
     {
       title_fr: 'HTML/CSS',
@@ -170,9 +168,5 @@ export class AppComponent {
 
   onSubmit(form: NgForm) {
     this.appService.addMail(form.value).then(() => form.reset());
-  }
-
-  onNavBarMenuToggle() {
-    this.isNavBarMenuOpened = !this.isNavBarMenuOpened;
   }
 }

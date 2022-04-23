@@ -9,9 +9,11 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { TranslocoRootModule } from './transloco-root.module';
+import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

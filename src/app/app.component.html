@@ -1,137 +1,7 @@
 <body class="dark-vertion black-bg">
-  <header
-    class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav"
-    id="mh-header"
-  >
-    <div
-      class="overlay"
-      (click)="onNavBarMenuToggle()"
-      [ngClass]="isNavBarMenuOpened ? 'active' : ''"
-    ></div>
-    <div class="container">
-      <div class="row">
-        <nav
-          class="navbar navbar-expand-lg mh-nav nav-btn justify-content-between"
-        >
-          <a class="navbar-brand">
-            <img
-              src="assets/img/rvasseur-logo.svg"
-              alt=""
-              class="img-personnal-logo"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="mh-collapse"
-            data-target="#navbar-for-mobile"
-            aria-controls="navbar-for-mobile"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            (click)="onNavBarMenuToggle()"
-            [ngClass]="isNavBarMenuOpened ? 'active' : ''"
-          >
-            <span class="navbar-toggler-icon icon"></span>
-          </button>
-
-          <div
-            class="mh-collapse navbar-mh-collapse"
-            id="navbar-for-mobile"
-            (click)="onNavBarMenuToggle()"
-            [ngClass]="isNavBarMenuOpened ? 'active' : ''"
-          >
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#mh-home" transloco="home"></a>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="#mh-about"
-                  transloco="about.title"
-                ></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#mh-skills" transloco="skills"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#mh-experience" transloco="xps"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#mh-blog" transloco="blog"></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#mh-contact" transloco="contact"></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header>
-
-  <section
-    class="mh-home"
-    id="mh-home"
-    data-spy="scroll"
-    data-target="#mh-header"
-    data-offset="0"
-  >
-    <div class="home-ovimg">
-      <div class="container">
-        <div
-          class="row xs-column-reverse section-separator vertical-middle-content"
-        >
-          <div class="col-sm-6">
-            <div class="mh-header-info">
-              <div class="mh-promo">
-                <span transloco="my_name_is"></span>
-              </div>
-
-              <h2>Raphaël Vasseur</h2>
-              <ul>
-                <li>
-                  <i class="fas fa-envelope"></i
-                  ><a href="mailto:raphael.vasseur@loungeup.com"
-                    >raphael.vasseur@loungeup.com</a
-                  >
-                </li>
-                <li>
-                  <i class="fas fa-map-marker-alt"></i>
-                  <address transloco="location"></address>
-                </li>
-              </ul>
-
-              <ul class="social-icon">
-                <li>
-                  <a
-                    href="https://www.linkedin.com/in/rapha%C3%ABl-vasseur-7a1067174/"
-                    ><i class="fab fa-linkedin-in"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="https://github.com/rvasseur31"
-                    ><i class="fab fa-github"></i
-                  ></a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="hero-img">
-              <div class="img-border">
-                <img
-                  src="/assets/img/me.webp"
-                  alt="picture of me"
-                  class="img-fluid"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <app-header></app-header>
+  <app-home></app-home>
+  
   <section class="mh-about" id="mh-about">
     <div class="container">
       <div class="row section-separator">
@@ -288,10 +158,10 @@
         <div class="col-sm-12 section-title">
           <h3 transloco="featured_posts"></h3>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 d-flex align-items-stretch">
           <div class="mh-blog-item dark-bg">
             <img
-              src="https://www.mides.com/wp-content/uploads/2020/05/c08d236c-untitled-1.jpg"
+              src="assets/img/granaquest-blog-post.jpeg"
               alt=""
               class="img-fluid"
             />
@@ -310,7 +180,7 @@
                   </li>
                 </ul>
               </div>
-              <p>
+              <p class="blog-description">
                 Tout à commencer en juin 2020, lors d'un événement de job dating
                 organisé par Ynov Toulouse Campus.
               </p>
@@ -321,10 +191,10 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 d-flex align-items-stretch">
           <div class="mh-blog-item dark-bg">
             <img
-              src="https://www.mides.com/wp-content/uploads/2020/05/c08d236c-untitled-1.jpg"
+              src="assets/img/granaquest-blog-post.jpeg"
               alt=""
               class="img-fluid"
             />
@@ -343,7 +213,7 @@
                   </li>
                 </ul>
               </div>
-              <p>
+              <p class="blog-description">
                 Lors de ma première semaine, je me suis très vite familiarisé
                 avec projet et l'équipe.
               </p>
@@ -354,10 +224,10 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 d-flex align-items-stretch">
           <div class="mh-blog-item dark-bg">
             <img
-              src="https://www.mides.com/wp-content/uploads/2020/05/c08d236c-untitled-1.jpg"
+              src="assets/img/granaquest-blog-post.jpeg"
               alt=""
               class="img-fluid"
             />
@@ -372,7 +242,7 @@
                   </li>
                 </ul>
               </div>
-              <p>
+              <p class="blog-description">
                 Pour commencer à préparer mon poste d'alternant chez GranaQuest,
                 j'ai commencé à travailler le Swift (le langage permettant de
                 créer des applications pour l'écosystème Apple)
@@ -384,10 +254,10 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 d-flex align-items-stretch">
           <div class="mh-blog-item dark-bg">
             <img
-              src="https://lh3.googleusercontent.com/P838gW3TAvd7MeyMe4DLmyb6gTPpRR0CwskmqtbyPXDZGdsngIekJs-_Y77K9wpCeWTwZbm05171hFxJu4h-DEOMpOUxib_Rtj2KiII=w760-h360"
+              src="assets/img/android-blog-post.png"
               alt=""
               class="img-fluid"
             />
@@ -406,7 +276,7 @@
                   </li>
                 </ul>
               </div>
-              <p>
+              <p class="blog-description">
                 Dans cet article, je vais vous montrer comment réaliser cette
                 belle tabbar avec TabLayout et ViewPager2 sur Android.
               </p>
@@ -417,10 +287,10 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4 d-flex align-items-stretch">
           <div class="mh-blog-item dark-bg">
             <img
-              src="https://www.mides.com/wp-content/uploads/2020/05/c08d236c-untitled-1.jpg"
+              src="assets/img/granaquest-blog-post.jpeg"
               alt=""
               class="img-fluid"
             />
@@ -437,7 +307,7 @@
                   </li>
                 </ul>
               </div>
-              <p>
+              <p class="blog-description">
                 Avant de commencer, j'aimerais remercier Thibaut (mon maitre de
                 stage) et toute l'équipe de chez Granaquest.
               </p>

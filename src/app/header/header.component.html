@@ -1,0 +1,71 @@
+<header
+    class="black-bg mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav"
+    id="mh-header"
+    [ngStyle]="{ backgroundColor: isPageScrolled ? '#101010' : 'transparent' }"
+  >
+    <div
+      class="overlay"
+      (click)="onNavBarMenuToggle()"
+      [ngClass]="isNavBarMenuOpened ? 'active' : ''"
+    ></div>
+    <div class="container">
+      <div class="row">
+        <nav
+          class="navbar navbar-expand-lg mh-nav nav-btn justify-content-between"
+        >
+          <a class="navbar-brand">
+            <img
+              src="assets/img/rvasseur-logo.svg"
+              alt=""
+              class="img-personnal-logo"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="mh-collapse"
+            data-target="#navbar-for-mobile"
+            aria-controls="navbar-for-mobile"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            (click)="onNavBarMenuToggle()"
+            [ngClass]="isNavBarMenuOpened ? 'active' : ''"
+          >
+            <span class="navbar-toggler-icon icon"></span>
+          </button>
+
+          <div
+            class="mh-collapse navbar-mh-collapse"
+            id="navbar-for-mobile"
+            (click)="onNavBarMenuToggle()"
+            [ngClass]="isNavBarMenuOpened ? 'active' : ''"
+          >
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#mh-home" transloco="home"></a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#mh-about"
+                  transloco="about.title"
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mh-skills" transloco="skills"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mh-experience" transloco="xps"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mh-blog" transloco="blog"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#mh-contact" transloco="contact"></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
