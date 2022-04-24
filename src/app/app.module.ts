@@ -8,12 +8,16 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
-import { TranslocoRootModule } from './transloco-root.module';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { TranslocoRootModule } from './transloco-root.module';
+import { AboutComponent } from './about/about.component';
+import { ServicesComponent } from './services/services.component';
+import { FooterComponent } from './footer/footer.component';
+import { BlogItemComponent } from './blog-item/blog-item.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent],
+  declarations: [AppComponent, HeaderComponent, HomeComponent, AboutComponent, ServicesComponent, FooterComponent, BlogItemComponent],
   imports: [
     BrowserModule,
     HttpClientModule,

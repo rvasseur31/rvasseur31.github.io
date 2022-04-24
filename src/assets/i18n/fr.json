@@ -26,8 +26,8 @@
   "message": "Votre message",
   "send_message": "Envoyer",
   "featured_posts": "Articles en vedette",
-  "by": "Par",
-  "post_on": "Publié le",
+  "by": " par ",
+  "post_on": "Publié le ",
   "read_more": "Lire la suite",
   "message_sent": "Message envoyé",
   "about": {

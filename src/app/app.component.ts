@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { IMail } from 'src/shared/interfaces/mail.interface';
+import { SkillCategory } from 'src/shared/enums/skill-category.enum';
 import { AppService } from './app.service';
-
-enum SkillCategory {
-  TECHNICAL,
-  PROFESSIONAL,
-}
 
 @Component({
   selector: 'app-root',
@@ -18,91 +12,10 @@ export class AppComponent {
 
   title = 'rvasseur';
 
-  skills = [
-    {
-      title_fr: 'HTML/CSS',
-      title_en: 'HTML/CSS',
-      skill: '85',
-      type: SkillCategory.TECHNICAL,
-    },
-    {
-      title_fr: 'Javascript',
-      title_en: 'Javascript',
-      skill: '70',
-      type: SkillCategory.TECHNICAL,
-    },
-    {
-      title_fr: 'PHP 7 (Laravel)',
-      title_en: 'PHP 7 (Laravel)',
-      skill: '70',
-      type: SkillCategory.TECHNICAL,
-    },
-    {
-      title_fr: 'Android Natif (Java)',
-      title_en: 'Android Natif (Java)',
-      skill: '75',
-      type: SkillCategory.TECHNICAL,
-    },
-    {
-      title_fr: 'Android/IOS (Flutter)',
-      title_en: 'Android/IOS (Flutter)',
-      skill: '60',
-      type: SkillCategory.TECHNICAL,
-    },
-    {
-      title_fr: 'Python (Tkinter)',
-      title_en: 'Python (Tkinter)',
-      skill: '50',
-      type: SkillCategory.TECHNICAL,
-    },
-    {
-      title_fr: 'C++ (QT)',
-      title_en: 'C++ (QT)',
-      skill: '60',
-      type: SkillCategory.TECHNICAL,
-    },
-    {
-      title_fr: 'Suite office',
-      title_en: 'Suite office',
-      skill: '90',
-      type: SkillCategory.TECHNICAL,
-    },
-    {
-      title_fr: 'Communication',
-      title_en: 'Communication',
-      skill: '80',
-      type: SkillCategory.PROFESSIONAL,
-    },
-    {
-      title_fr: "Travail d'équipe",
-      title_en: 'Work team',
-      skill: '70',
-      type: SkillCategory.PROFESSIONAL,
-    },
-    {
-      title_fr: 'Gestion de projet',
-      title_en: 'Project management',
-      skill: '85',
-      type: SkillCategory.PROFESSIONAL,
-    },
-    {
-      title_fr: 'Créativité',
-      title_en: 'Creativity',
-      skill: '50',
-      type: SkillCategory.PROFESSIONAL,
-    },
-  ];
-
-  randomSkill = this.skills
-    .map((value) => ({ value, sort: Math.random() }))
-    .sort((a, b) => a.sort - b.sort)
-    .map(({ value }) => value)
-    .slice(0, 5);
-
-  techninalSkills = this.skills.filter(
+  techninalSkills = this.appService.skills.filter(
     (skill) => skill.type === SkillCategory.TECHNICAL
   );
-  professionalSkills = this.skills.filter(
+  professionalSkills = this.appService.skills.filter(
     (skill) => skill.type === SkillCategory.PROFESSIONAL
   );
 
@@ -158,15 +71,4 @@ export class AppComponent {
       summary_en: 'I helped people.',
     },
   ];
-
-  mail: IMail = {
-    firstName: '',
-    lastName: '',
-    from: '',
-    text: '',
-  };
-
-  onSubmit(form: NgForm) {
-    this.appService.addMail(form.value).then(() => form.reset());
-  }
 }

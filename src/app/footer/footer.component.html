@@ -1,0 +1,102 @@
+<footer class="mh-footer" id="mh-contact">
+  <div class="map-image image-bg">
+    <div class="container">
+      <div class="row section-separator d-flex justify-content-center">
+        <div class="col-sm-12 section-title">
+          <h3 transloco="contact_me"></h3>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <form
+            id="contactForm"
+            #mailForm="ngForm"
+            (ngSubmit)="onSubmit(mailForm)"
+          >
+            <div class="row">
+              <div class="col-md-6 col-sm-12">
+                <input
+                  name="firstName"
+                  class="contact-name form-control"
+                  type="text"
+                  placeholder="{{ 'firstName' | transloco }}"
+                  required
+                  #name="ngModel"
+                  [(ngModel)]="mail.firstName"
+                />
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <input
+                  name="lastName"
+                  class="contact-email form-control"
+                  type="text"
+                  placeholder="{{ 'lastName' | transloco }}"
+                  required
+                  #name="ngModel"
+                  [(ngModel)]="mail.lastName"
+                />
+              </div>
+              <div class="col-sm-12">
+                <input
+                  name="from"
+                  class="contact-subject form-control"
+                  type="email"
+                  placeholder="{{ 'email' | transloco }}"
+                  required
+                  #name="ngModel"
+                  [(ngModel)]="mail.from"
+                />
+              </div>
+              <div class="col-sm-12">
+                <textarea
+                  name="message"
+                  class="contact-message"
+                  placeholder="{{ 'message' | transloco }}"
+                  required
+                  #name="ngModel"
+                  [(ngModel)]="mail.text"
+                ></textarea>
+              </div>
+              <div class="btn-form col-sm-12">
+                <button
+                  type="submit"
+                  class="btn btn-fill btn-block"
+                  [disabled]="!mailForm.valid"
+                  [disabled]="mailForm.invalid"
+                >
+                  {{ "send_message" | transloco }}
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="list-unstyled list-inline text-center">
+        <li class="list-inline-item">
+          <a
+            class="btn-floating btn-fb mx-1"
+            href="https://github.com/rvasseur31"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a
+            class="btn-floating btn-li mx-1"
+            href="https://www.linkedin.com/in/rapha%C3%ABl-vasseur-7a1067174/"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="btn-floating btn-tw mx-1">
+            <i class="far fa-user-circle"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer-copyright text-center py-3">
+      © 2022 Copyright : Vasseur Raphaël
+    </div>
+  </div>
+</footer>

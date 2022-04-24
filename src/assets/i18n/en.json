@@ -27,8 +27,8 @@
   "message": "Your message",
   "send_message": "Send",
   "featured_posts": "Featured Posts",
-  "by": "By",
-  "post_on": "Post on",
+  "by": " by ",
+  "post_on": "Post on ",
   "read_more": "Read more",
   "message_sent": "Your message has been sent successfully.",
   "about": {

@@ -1,0 +1,111 @@
+.mh-about .mh-about-inner {
+  padding-left: 50px;
+}
+
+.mh-about .mh-about-inner h2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.mh-about .mh-about-inner p {
+  margin-bottom: 30px;
+}
+
+.mh-about .mh-about-inner .btn {
+  margin-top: 20px;
+}
+
+.mh-about-tag {
+  word-break: break-all;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.mh-about-tag ul li {
+  margin: 0px 6px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 4px 0px;
+  display: inline-block;
+}
+
+.mh-about-tag ul li,
+.mh-about-tag ul li::after {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.mh-about-tag ul li {
+  background: none;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.mh-about-tag ul li::before,
+.mh-about-tag ul li::after {
+  background: #fff;
+  content: "";
+  position: absolute;
+  z-index: -1;
+}
+
+.mh-about-tag ul li:hover {
+  color: #0bceaf;
+}
+
+.mh-about-tag ul li::before {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.mh-about-tag ul li::after {
+  background: #0bceaf;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.mh-about-tag ul li:hover:after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.mh-about-tag ul li span {
+  padding: 3px 7px;
+}
+
+.mh-about-tag ul li:hover span {
+  background-color: transparent !important;
+  color: #0bceaf;
+}
+
+@media only screen and (max-width: 991px) {
+  .mh-about .mh-about-inner {
+    padding-left: 5px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .mh-about .mh-about-inner {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .mh-about .mh-about-inner {
+    padding-left: 5px;
+    text-align: center;
+    margin: 30px 15px;
+  }
+}
