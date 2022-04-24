@@ -15,7 +15,7 @@ export class FooterComponent {
     firstName: '',
     lastName: '',
     from: '',
-    text: '',
+    message: '',
   };
 
   onSubmit(form: NgForm) {
