@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgsRevealService } from 'ngx-scrollreveal';
 import { SkillCategory } from 'src/shared/enums/skill-category.enum';
 import { AppService } from './app.service';
 
@@ -6,6 +7,7 @@ import { AppService } from './app.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css', './app.component.responsive.css'],
+  providers: [NgsRevealService],
 })
 export class AppComponent {
   constructor(private appService: AppService) {}

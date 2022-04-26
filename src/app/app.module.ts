@@ -15,6 +15,7 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { FooterComponent } from './footer/footer.component';
 import { BlogItemComponent } from './blog-item/blog-item.component';
+import { NgsRevealModule } from 'ngx-scrollreveal';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, HomeComponent, AboutComponent, ServicesComponent, FooterComponent, BlogItemComponent],
@@ -38,6 +39,7 @@ import { BlogItemComponent } from './blog-item/blog-item.component';
       showInnerStroke: false,
       animation: false,
     }),
+    NgsRevealModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),
