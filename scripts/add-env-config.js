@@ -1,6 +1,6 @@
-const writeFile = require("fs").writeFile;
+const writeFileSync = require("fs").writeFileSync;
 
-const targetPath = "./src/environments/environment.prod.ts";
+const targetsPath = ["./src/environments/environment.ts", "./src/environments/environment.prod.ts"];
 
 const envConfigFile = `export const environment = {
   firebase: {
@@ -17,8 +17,7 @@ const envConfigFile = `export const environment = {
 };
 `;
 
-writeFile(targetPath, envConfigFile, "utf8", (err) => {
-  if (err) {
-    return console.log(err);
-  }
+targetsPath.forEach(targetPath => {
+    writeFileSync(targetPath, envConfigFile, "utf8");
 });
+
