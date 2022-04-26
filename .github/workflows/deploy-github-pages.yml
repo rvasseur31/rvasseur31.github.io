@@ -22,3 +22,5 @@ jobs:
         MAIL_API_KEY: ${{ secrets.MAIL_API_KEY }}
     - name: Run deploy script
       run: yarn deploy
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
