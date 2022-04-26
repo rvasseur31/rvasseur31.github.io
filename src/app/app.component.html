@@ -10,15 +10,12 @@
         <div class="col-sm-12 col-md-6">
           <div class="mh-skills-inner">
             <div class="mh-professional-skill">
-              <h3
-                transloco="hard_skills"
-                [ngsReveal]="{ reset: true, cleanup: true }"
-              ></h3>
+              <h3 transloco="hard_skills" ngsReveal></h3>
               <div class="each-skills">
                 <div
                   class="candidatos"
-                  [ngsRevealSet]="{ reset: true, cleanup: true }"
-                  [ngsInterval]="200"
+                  ngsRevealSet
+                  [ngsInterval]="50"
                   [ngsSelector]="'.candidatos'"
                   *ngFor="let skill of techninalSkills"
                 >
@@ -41,15 +38,12 @@
         </div>
         <div class="col-sm-12 col-md-6">
           <div class="mh-professional-skills">
-            <h3
-              transloco="soft_skills"
-              [ngsReveal]="{ reset: true, cleanup: true }"
-            ></h3>
+            <h3 transloco="soft_skills" ngsReveal></h3>
             <ul class="mh-professional-progress">
               <li
                 class="mh-professional-progress-item"
-                [ngsRevealSet]="{ reset: true, cleanup: true }"
-                [ngsInterval]="200"
+                ngsRevealSet
+                [ngsInterval]="50"
                 [ngsSelector]="'.mh-professional-progress-item'"
                 [ngsSync]="true"
                 *ngFor="let skill of professionalSkills"
@@ -72,14 +66,11 @@
         <div class="row section-separator">
           <div class="col-sm-12 col-md-6">
             <div class="mh-education">
-              <h3
-                transloco="cursuses"
-                [ngsReveal]="{ reset: true, cleanup: true }"
-              ></h3>
+              <h3 transloco="cursuses" ngsReveal></h3>
               <div class="mh-education-deatils">
                 <div
-                  [ngsRevealSet]="{ reset: true, cleanup: true }"
-                  [ngsInterval]="200"
+                  ngsRevealSet
+                  [ngsInterval]="50"
                   [ngsSelector]="'.mh-education-item'"
                   class="mh-education-item dark-bg"
                   *ngFor="let cursus of cursuses"
@@ -97,15 +88,12 @@
           </div>
           <div class="col-sm-12 col-md-6">
             <div class="mh-work">
-              <h3
-                transloco="xps_pro"
-                [ngsReveal]="{ reset: true, cleanup: true }"
-              ></h3>
+              <h3 transloco="xps_pro" ngsReveal></h3>
               <div class="mh-experience-deatils">
                 <div
                   class="mh-work-item dark-bg"
-                  [ngsRevealSet]="{ reset: true, cleanup: true }"
-                  [ngsInterval]="200"
+                  ngsRevealSet
+                  [ngsInterval]="50"
                   [ngsSelector]="'.mh-work-item'"
                   *ngFor="let xp of xps"
                 >
