@@ -21,6 +21,7 @@ jobs:
         FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
         MAIL_API_KEY: ${{ secrets.MAIL_API_KEY }}
     - name: Run deploy script
+      if: github.ref == 'refs/heads/master'
       run: yarn deploy
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

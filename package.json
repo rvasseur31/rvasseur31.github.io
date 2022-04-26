@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "install:config": "node ./scripts/add-env-config.js",
-    "deploy": "ng deploy --base-href=/ --repo=https://github.com/rvasseur31/rvasseur31.github.io.git"
+    "deploy": "ng deploy --base-href=/ --repo=https://github.com/rvasseur31/rvasseur31.github.io.git --no-silent --name='GitAction Bot' --email='raphael.vasseur@ynov.com' --cname=angular-cli-ghpages.angular.schule"
   },
   "private": true,
   "dependencies": {
