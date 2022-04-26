@@ -9,5 +9,5 @@ export const environment = {
     measurementId: '',
   },
   mailApiKey: '',
-  production: true
+  production: true,
 };

@@ -7,6 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "install:config": "node ./scripts/add-env-config.js",
     "deploy": "ng deploy --base-href=/ --repo=https://github.com/rvasseur31/rvasseur31.github.io.git"
   },
   "private": true,
@@ -34,6 +35,7 @@
     "@types/jasmine": "~3.10.0",
     "@types/node": "^12.11.1",
     "angular-cli-ghpages": "^1.0.0",
+    "fs": "^0.0.1-security",
     "jasmine-core": "~4.0.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
