@@ -1,0 +1,21 @@
+<div class="circle-progress-bar-container">
+  <div style="position: relative">
+    <div class="circle-progress-bar-info">
+      <p class="circle-progress-bar-info-percentage">
+        {{ percentageComplete }}%
+      </p>
+      <p class="circle-progress-bar-info-title">{{ title }}</p>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 34 34">
+      <circle cx="16" cy="16" r="16" class="progress-bar-background" />
+
+      <circle
+        cx="16"
+        cy="16"
+        r="16"
+        class="progress-bar-progress"
+        [style]="{ 'stroke-dashoffset': 100 - +percentageComplete + 'px' }"
+      />
+    </svg>
+  </div>
+</div>

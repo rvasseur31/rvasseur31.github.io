@@ -5,39 +5,33 @@ import { getAuth, provideAuth } from '@angular/fire/auth';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgCircleProgressModule } from 'ng-circle-progress';
 import { environment } from '../environments/environment';
+import { AboutComponent } from './about/about.component';
 import { AppComponent } from './app.component';
+import { BlogItemComponent } from './blog-item/blog-item.component';
+import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
-import { TranslocoRootModule } from './transloco-root.module';
-import { AboutComponent } from './about/about.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { ServicesComponent } from './services/services.component';
-import { FooterComponent } from './footer/footer.component';
-import { BlogItemComponent } from './blog-item/blog-item.component';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, HomeComponent, AboutComponent, ServicesComponent, FooterComponent, BlogItemComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    AboutComponent,
+    ServicesComponent,
+    FooterComponent,
+    BlogItemComponent,
+    ProgressBarComponent,
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
     TranslocoRootModule,
     FormsModule,
-    NgCircleProgressModule.forRoot({
-      toFixed: 0,
-      radius: 80,
-      maxPercent: 100,
-      outerStrokeColor: '#0bceaf',
-      unitsFontWeight: '600',
-      unitsColor: '#ffffff',
-      titleColor: '#ffffff',
-      titleFontWeight: '600',
-      subtitleColor: '#ffffff',
-      subtitleFontWeight: '600',
-      showBackground: false,
-      showInnerStroke: false,
-      animation: false,
-    }),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideFirestore(() => getFirestore()),

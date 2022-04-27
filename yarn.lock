@@ -5228,13 +5228,6 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-ng-circle-progress@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/ng-circle-progress/-/ng-circle-progress-1.6.0.tgz#e153d8e207946f0963636a4e0f8c02c3114ed3c3"
-  integrity sha512-HD7Uthog/QjRBFKrrnbOrm313CrkkWiTxENR7PjUy9lSUkuys5HdT0+E8UiHDk8VLSxC/pMmrx3eyYLhNq7EnQ==
-  dependencies:
-    tslib "^2.0.0"
-
 nice-napi@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/nice-napi/-/nice-napi-1.0.2.tgz#dc0ab5a1eac20ce548802fc5686eaa6bc654927b"

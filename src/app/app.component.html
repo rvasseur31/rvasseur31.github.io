@@ -12,10 +12,7 @@
             <div class="mh-professional-skill">
               <h3 transloco="hard_skills"></h3>
               <div class="each-skills">
-                <div
-                  class="candidatos"
-                  *ngFor="let skill of techninalSkills"
-                >
+                <div class="candidatos" *ngFor="let skill of techninalSkills">
                   <div class="parcial">
                     <div class="info">
                       <div class="nome">{{ skill.title_en }}</div>
@@ -38,14 +35,12 @@
             <h3 transloco="soft_skills"></h3>
             <ul class="mh-professional-progress">
               <li
-                class="mh-professional-progress-item"
                 *ngFor="let skill of professionalSkills"
               >
-                <circle-progress
-                  class="mh-progress mh-progress-circle"
-                  [percent]="+skill.skill"
-                  [subtitle]="skill.title_en"
-                ></circle-progress>
+                <app-progress-bar
+                  percentageComplete="{{ +skill.skill }}"
+                  title="{{ skill.title_en }}"
+                ></app-progress-bar>
               </li>
             </ul>
           </div>
@@ -80,10 +75,7 @@
             <div class="mh-work">
               <h3 transloco="xps_pro"></h3>
               <div class="mh-experience-deatils">
-                <div
-                  class="mh-work-item dark-bg"
-                  *ngFor="let xp of xps"
-                >
+                <div class="mh-work-item dark-bg" *ngFor="let xp of xps">
                   <h4>
                     {{ xp.title_en }} <a>{{ xp.company }}</a>
                   </h4>
